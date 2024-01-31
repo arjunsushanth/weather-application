@@ -1,7 +1,7 @@
 function getWeather(){
     let cityname=city.value;
     console.log(cityname);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=6fa99e1f96f024f79970c5a3532b2ac6&units=metric`).
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=6fa99e1f96f024f79970c5a3532b2ac6&units=metric`).
     then(res=>res.json()).then(data=>displayWeather(data))
 
 }
